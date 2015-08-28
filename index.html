@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My paint</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="paint">
+            <canvas id="canvas" width="800" height="500"></canvas>
+            <form>
+                <label for="usingChoice">Action</label>
+                <select id="usingChoice">
+                  <option value="paint">Pinceau</option>
+                  <option value="rect">Rectangle</option>
+                  <option value="cercle">Cercle</option>
+                  <option value="ligne">Ligne</option>
+                  <option value="texte">Texte</option>
+                </select>
+                <label for="color">Couleur trait</label>
+                <input type="color" id="color" value="#fad345" name="textcolor">
+                <label for="text">Ecrire</label>
+                <input type="text" id="text" placeholder="Taper votre texte ici!">
+                <label for="policeChoice">Police</label>
+                <select id="policeChoice">
+                  <option value="Impact">Impact</option>
+                  <option value="Verdana">Verdana</option>
+                  <option value="Courier">Courier</option>
+                  <option value="cursive">cursive</option>
+                  <option value="Arnoldboecklin">Arnoldboecklin</option>
+                </select>
+                <label for="ligne_size">Taille px</label>
+                <input type="range" id="ligne_size" value="3" min="1" max="50">
+                <input type="submit" id="clear" value="clear">
+            </form>
+            <a href="#" id="download" download="canvas.png">Download</a>
+        </div>
+        <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
+    </body>
+</html>
